@@ -1,0 +1,55 @@
+@font-face {
+    font-family: logotext;
+    src: url(assets/fonts/SortsMillGoudy-Regular.ttf);
+}
+
+
+.maincontainer{
+    height: 100vh;
+    display: flex;
+}
+
+
+.maincontainer > div:nth-child(1){
+    background-image: url(assets/keyur-nandaniya-B0VdY1ydF-Q-unsplash.jpg);
+    background-size:100% 100%; 
+    width: 40%;
+    border-right: 1px solid RGB(255,255,255,0.2);
+    box-shadow: 1px 1px 30px 1px RGB(0,0,0,0.3);
+}
+
+.maincontainer > div:nth-child(2){
+    background-color: RGB(69,10,0,0.5);
+    width: 60%;
+}
+
+.logostrip{
+    /* background-color: RGB(204,69,39,0.05); */
+    background-color: RGB(255,171,154,0.05); 
+    position: relative;
+    top: 14%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: logotext;
+    font-size: calc(1rem + 4.5vw);
+    /* border-bottom-color: RGB(204,69,39,0.1); */
+     border-bottom: 1px solid RGB(204,69,39,0.04); 
+    /* border-bottom-color: RGB(255,255,255,1); */
+     border-top: 1px solid RGB(204,69,39,0.07);
+    /* border-top-color: RGB(204,69,39,0.1); */
+    /* border-top-color: RGB(255,255,255,1); */
+
+}
+
+.logostrip > span:nth-last-child(1){
+    color: white;
+    margin-right: 15%;
+    /* padding: 0.5rem 0 0.2rem 0; */
+}
+
+.logostrip img{
+    height: 1.2em;
+    width: auto;
+    margin-top: 0.4rem;
+}
