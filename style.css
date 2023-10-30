@@ -3,35 +3,67 @@
     src: url(assets/fonts/SortsMillGoudy-Regular.ttf);
 }
 
+@font-face {
+    font-family: standard;
+    src: url(assets/fonts/Rubik-VariableFont_wght.ttf);
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: os;
+    src: url(assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(assets/fonts/Roboto-Medium.ttf);
+}
+
+
+@font-face{
+    font-family: roboto-bold;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
 
 .maincontainer{
+    /* background-color: RGB(69,10,0,0.5); */
+    background-color: #A1847F;
     height: 100vh;
     display: flex;
 }
 
 
 .maincontainer > div:nth-child(1){
+    background-color: RGB(69,10,0,0.5);
     background-image: url(assets/keyur-nandaniya-B0VdY1ydF-Q-unsplash.jpg);
     background-size:100% 100%; 
     width: 40%;
-    border-right: 1px solid RGB(255,255,255,0.2);
+    /* border-right: 3px solid RGB(255,255,255,1); */
     box-shadow: 1px 1px 30px 1px RGB(0,0,0,0.3);
+    position: relative;
+    border-radius: 0px 8px 8px 0px;
+
 }
 
 .maincontainer > div:nth-child(2){
     background-color: RGB(69,10,0,0.5);
+    background-color: #A1847F;
+    /* background-color: RGB(204,69,39,0.04);  */
+    /* background-color: RGB(27,19,17,1); */
     width: 60%;
 }
 
 .logostrip{
     /* background-color: RGB(204,69,39,0.05); */
     background-color: RGB(255,171,154,0.05); 
-    position: relative;
-    top: 14%; 
+    position: absolute; 
+    bottom: 67vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; 
-    font-family: logotext;
+    font-family: logotext, sans-serif;
     font-size: calc(1rem + 4.5vw);
     /* border-bottom-color: RGB(204,69,39,0.1); */
      border-bottom: 1px solid RGB(204,69,39,0.04); 
@@ -39,6 +71,7 @@
      border-top: 1px solid RGB(204,69,39,0.07);
     /* border-top-color: RGB(204,69,39,0.1); */
     /* border-top-color: RGB(255,255,255,1); */
+    border-radius: 5px;
 
 }
 
@@ -52,4 +85,106 @@
     height: 1.2em;
     width: auto;
     margin-top: 0.4rem;
+}
+
+
+/* .textsection:nth-child(1){
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.textsection:nth-child(2){
+    background-color: RGB(255,159,130,1);
+    background-color: RGB(27,19,17,1);
+    /* border-top: 1px solid RGB(204,69,39,0.04); 
+    border-bottom: 1px solid RGB(204,69,39,0.04); */
+    border: 2px solid RGB(204,69,39,0.2);
+    height: 33vh;
+    box-shadow: 1px 1px 15px 1px RGB(0,0,0,0.7);
+    margin: 0 0.7rem;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.lheading{
+    height: 25%;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 11px rgb(0,0,0,0.09);
+    color: rgb(255,255,255,1);
+    font-size: calc(0.1em + 1.6vw);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.lheading > span{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.inputline{
+    height: 37%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input{
+    height: 50%;
+    width: 30%;
+    font-family: os, sans-serif;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid RGB(117,117,117,1); 
+    color: white;
+}
+
+
+
+.textsection:nth-child(3), .textsection:nth-child(1){
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.upperline{
+    background-color: RGB(255,171,154,0.05); 
+    border-bottom: 1px solid RGB(204,69,39,0.04); 
+    height: 0.7rem;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.lowerline{
+    background-color: RGB(255,171,154,0.05); 
+    border-top: 1px solid RGB(204,69,39,0.07);
+    height: 0.7rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.popout{
+    width: calc(100% - 2.4rem);
+    height: calc(100% - 1.4rem);
+    /* box-shadow: 1px 1px 30px 1px RGB(0,0,0,0.3); */
+    border-radius: 4px;
+    background-color: RGB(70,23,15,0.08); 
+    display: flex;
+    flex-direction: column;
+    font-size: calc(0.1em + 1.3vw);
+    font-family: os, sans-serif;
+    color: RGB(70,23,15,1);
+    color: RGB(27,19,17,1);
+    text-shadow: 1px 1px 11px rgb(0,0,0,0.09);
+    text-align: left;
+    padding-left: 1em;
 }
