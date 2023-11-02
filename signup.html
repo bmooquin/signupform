@@ -18,29 +18,38 @@
         <div class="infosection">
             <div class="textsection">
                 <div class="popout">
-                    <p class="standardtext">Welcome to the Odin Lion Safari! This is not a real online service. However, if you want to adventure in the plains of Africa, then get started now. Experience the adventure of your wildest dreams. Sign up now to get started.</p>
+                    <p class="standardtext">Welcome to the Odin Lion Safari! This is not a real online service. If you want to adventure in the plains of Africa, then get started now. Experience the adventure of your wildest dreams. Sign up now to get started.</p>
                     <p class="standardtext">You will never regret this!</p>
                 </div>
             </div>
             <div class="textsection">
-                <div class="upperline"></div>
-                <div class="lowerline"></div>
-                <div class="lheading"><span>Let's Go!</span></div>
+                <div class="upperline"><img src="assets/lion.png" alt="a lion"> Let's Go!</div>
+                <!-- <div class="lowerline"></div>
+                <div class="lheading"><span>Let's Go!</span></div> -->
+
+                    <div class="inputline">
+                        <input type="text" name="fname" id="fname" placeholder="First Name" form="finalform" autocomplete="off">
+                        <input type="text" name="" id="" placeholder="Last Name">
+                        <input type="email" name="" id="" placeholder="Email">
+                    </div>
+                    
                 <div class="inputline">
-                    <input type="text" name="" id="" placeholder="First Name">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <input type="password" name="" id="" placeholder="Password">
-                </div>
-                <div class="inputline">
-                    <input type="text" name="" id="" placeholder="Last Name">
+                    
                     <input type="tel" name="" id="" placeholder="Telephone Number">
+                    <input type="password" name="" id="" placeholder="Password">
                     <input type="password" name="" id="" placeholder="Confirm Password">
                 </div>
             </div>
             <div class="textsection">
-                <div class="popout"></div>
+                <div class="popout">
+                    <form action="https://httpbin.org/post" method="post" id="finalform">
+                        <p class="buttonpara"><button type="submit">Create Account</button></p>
+                        <p class="finalline">Already have an account? <a href="#">Log in</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>
