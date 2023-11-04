@@ -153,11 +153,14 @@
     justify-content: space-between;
 }
 
+.labelcontainer{
+    width: 30%;
+}
 
 
 input{
     /* height: 50%; */
-    width: 30%;
+    width: 100%; 
     font-family: standard, sans-serif;
     font-weight: 500;
     border: 0.01rem solid RGB(255,255,255,1); 
@@ -165,7 +168,7 @@ input{
     border-radius: 2px;
     height: 100%;
     outline: 4px solid RGB(160,128,95,1);
-    transition: box-shadow 0.1s ease-in-out;
+    transition: box-shadow 0.1s ease-in-out, outline 0.1s ease-in-out;
 }
 
 input:focus{
