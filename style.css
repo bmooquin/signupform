@@ -12,7 +12,6 @@
 @font-face{
     font-family: os;
     src: url(assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
-    font-weight: 700;
 }
 
 @font-face{
@@ -24,6 +23,21 @@
 @font-face{
     font-family: roboto-bold;
     src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face{
+    font-family: ptnarrow;
+    src: url(assets/fonts/PTSansNarrow-Regular.ttf);
+}
+
+@font-face {
+    font-family: ptnarrowbold;
+    src: url(assets/fonts/PTSansNarrow-Bold.ttf);
+}
+
+@font-face{
+    font-family: abel;
+    src: url(assets/fonts/Abel-Regular.ttf);
 }
 
 :root{
@@ -47,7 +61,37 @@
     /* box-shadow: 1px 1px 30px 1px RGB(0,0,0,0.3); */
     position: relative;
     border-radius: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
+.creditbar{
+    color: RGB(255,255,255,0.4);
+    font-family: abel, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    
+}
+
+.creditbar a{
+    color: RGB(255,255,255,0.7);
+    text-decoration-color: RGB(255,255,255,0.4);
+    font-weight: 400;
+}
+
+.creditbar a:hover{
+    color: RGB(255,255,255,0.9);
+    text-decoration-color: RGB(255,255,255,0.5);
+}
+
+.c2{
+    margin: 0rem 0rem 0rem 0rem;
+    background-color: RGB(255,171,154,0.15);
+    border-top: 1px solid RGB(204,69,39,0.07);
+    padding: 0.7rem 0rem;
+    display: flex; 
+    justify-content: space-around;
 
 }
 
