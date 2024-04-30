@@ -81,7 +81,7 @@
 }
 
 .creditbar a:hover{
-    color: RGB(255,255,255,0.9);
+    color: RGB(255,255,255,1);
     text-decoration-color: RGB(255,255,255,0.5);
 }
 
@@ -190,6 +190,45 @@
     margin-left: 1rem; 
 } */
 
+
+.inputlabel{
+    color: RGB(19,17,17,1);
+    color: transparent;
+    user-select: none;
+    font-family: standard, sans-serif;
+    font-size: 0.8rem;
+    visibility: visible;
+    margin: 0px 1px;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    background-color: transparent;
+    padding: 1px 3px;
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
+
+input:focus + .inputlabel{
+    visibility: visible; 
+    color: RGB(0,255,0,1);
+    background-color: RGB(0,255,0,0.4);
+    border-bottom: 1px solid RGB(0,255,0,0.3);
+    border-left:1px solid RGB(0,255,0,0.3);
+    border-right: 1px solid RGB(0,255,0,0.3);
+} 
+
+/* was focus before */
+
+
+
+/* input:valid{
+    box-shadow: 0px 0px 7px 6px RGB(0,255,0,0.5);
+    outline: 3px solid RGB(0,255,0,1);
+}
+
+input:invalid{
+    box-shadow: 0px 0px 7px 6px RGB(255,0,0,0.5);
+    outline: 3px solid RGB(255,0,0,1);
+} */
+
 .inputline{
     display: flex;
     padding: 0rem var(--right-liner);
@@ -199,6 +238,11 @@
 
 .labelcontainer{
     width: 30%;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start
 }
 
 
@@ -213,20 +257,103 @@ input{
     height: 100%;
     outline: 4px solid RGB(160,128,95,1);
     transition: box-shadow 0.1s ease-in-out, outline 0.1s ease-in-out;
+    flex-shrink: 0;
 }
+
+
 
 input:focus{
     box-shadow: 0px 0px 7px 6px RGB(0,255,0,0.5);
     outline: 3px solid RGB(0,255,0,1);
 }
 
+
+
 input:focus::placeholder{
-    color: RGB(204,69,39,1);
-    visibility: hidden;
+    color: RGB(255,255,255,1);
+    font-size: 0.6rem;
 }
+
+input:focus:invalid{
+    box-shadow: 0px 0px 7px 6px RGB(255,0,0,0.5);
+    outline: 3px solid RGB(255,0,0,1);
+}
+
+input:focus:invalid + .inputlabel{
+    visibility: visible; 
+    color: RGB(255,0,0,1);
+    background-color: RGB(255,0,0,0.4);
+    border-bottom: 1px solid RGB(255,0,0,0.3);
+    border-left:1px solid RGB(255,0,0,0.3);
+    border-right: 1px solid RGB(255,0,0,0.3);
+}
+
+input:not(:placeholder-shown):invalid{
+    box-shadow: 0px 0px 7px 6px RGB(255,0,0,0.5);
+    outline: 3px solid RGB(255,0,0,1);
+}
+
+input:not(:placeholder-shown):invalid + .inputlabel{
+    visibility: visible; 
+    color: RGB(255,0,0,1);
+    background-color: RGB(255,0,0,0.4);
+    border-bottom: 1px solid RGB(255,0,0,0.3);
+    border-left:1px solid RGB(255,0,0,0.3);
+    border-right: 1px solid RGB(255,0,0,0.3);
+}
+
+
+/* ========================================================== */
+
+/* 
+.ltmp{
+    box-shadow: 0px 0px 7px 6px RGB(255,0,0,0.5);
+    outline: 3px solid RGB(255,0,0,1);
+}
+
+.ltmpcont{
+    gap: 1px;
+    align-items: normal;
+}
+
+.ltmpdiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.l5{
+    color: RGB(255,0,0,1);
+    background-color: RGB(255,0,0,0.4);
+    border-bottom: 1px solid RGB(255,0,0,0.3);
+    border-left:1px solid RGB(255,0,0,0.3);
+    border-right: 1px solid RGB(255,0,0,0.3);
+    display: none; 
+
+
+} */
+
+/* ========================================================== */
+
+input:not(:placeholder-shown):valid{
+    box-shadow: 0px 0px 7px 6px RGB(0,255,0,0.5);
+    outline: 3px solid RGB(0,255,0,1);
+}
+
+input:not(:placeholder-shown):valid + .inputlabel{
+    visibility: visible; 
+    color: RGB(0,255,0,1);
+    background-color: RGB(0,255,0,0.4);
+    border-bottom: 1px solid RGB(0,255,0,0.3);
+    border-left:1px solid RGB(0,255,0,0.3);
+    border-right: 1px solid RGB(0,255,0,0.3);
+}
+
 
 input::placeholder{
     font-size: 0.8rem;
+    transition: color 0.05s ease-in-out, font-size 0.05s ease-in-out;
 }
 
 
