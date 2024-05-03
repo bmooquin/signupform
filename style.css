@@ -206,7 +206,7 @@
     text-align: center;
 }
 
-input:focus + .inputlabel{
+.inputbox:focus + .inputlabel{
     visibility: visible; 
     color: RGB(0,255,0,1);
     background-color: RGB(0,255,0,0.4);
@@ -246,7 +246,7 @@ input:invalid{
 }
 
 
-input{
+.inputbox{
     /* height: 50%; */
     width: 100%; 
     font-family: standard, sans-serif;
@@ -262,24 +262,24 @@ input{
 
 
 
-input:focus{
+.inputbox:focus{
     box-shadow: 0px 0px 7px 6px RGB(0,255,0,0.5);
     outline: 3px solid RGB(0,255,0,1);
 }
 
 
 
-input:focus::placeholder{
+.inputbox:focus::placeholder{
     color: RGB(255,255,255,1);
     font-size: 0.6rem;
 }
 
-input:focus:invalid{
+.inputbox:focus:invalid{
     box-shadow: 0px 0px 7px 6px RGB(255,0,0,0.5);
     outline: 3px solid RGB(255,0,0,1);
 }
 
-input:focus:invalid + .inputlabel{
+.inputbox:focus:invalid + .inputlabel{
     visibility: visible; 
     color: RGB(255,0,0,1);
     background-color: RGB(255,0,0,0.4);
@@ -288,12 +288,12 @@ input:focus:invalid + .inputlabel{
     border-right: 1px solid RGB(255,0,0,0.3);
 }
 
-input:not(:placeholder-shown):invalid{
+.inputbox:not(:placeholder-shown):invalid{
     box-shadow: 0px 0px 7px 6px RGB(255,0,0,0.5);
     outline: 3px solid RGB(255,0,0,1);
 }
 
-input:not(:placeholder-shown):invalid + .inputlabel{
+.inputbox:not(:placeholder-shown):invalid + .inputlabel{
     visibility: visible; 
     color: RGB(255,0,0,1);
     background-color: RGB(255,0,0,0.4);
@@ -336,12 +336,12 @@ input:not(:placeholder-shown):invalid + .inputlabel{
 
 /* ========================================================== */
 
-input:not(:placeholder-shown):valid{
+.inputbox:not(:placeholder-shown):valid{
     box-shadow: 0px 0px 7px 6px RGB(0,255,0,0.5);
     outline: 3px solid RGB(0,255,0,1);
 }
 
-input:not(:placeholder-shown):valid + .inputlabel{
+.inputbox:not(:placeholder-shown):valid + .inputlabel{
     visibility: visible; 
     color: RGB(0,255,0,1);
     background-color: RGB(0,255,0,0.4);
@@ -351,7 +351,7 @@ input:not(:placeholder-shown):valid + .inputlabel{
 }
 
 
-input::placeholder{
+.inputbox::placeholder{
     font-size: 0.8rem;
     transition: color 0.05s ease-in-out, font-size 0.05s ease-in-out;
 }
